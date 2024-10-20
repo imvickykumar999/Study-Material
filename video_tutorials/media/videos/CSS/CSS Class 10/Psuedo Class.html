@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		div{
+			width:500px;
+			padding:10px;
+			background-color: lightblue;
+			border:2px black solid;
+		}
+ h3:first-of-type, h3:last-of-type,h3:nth-of-type(4){
+	background-color: yellow;
+	padding:10px;
+	width:400px;
+	border:1px black solid;
+}
+.ddd h3:first-child,.ddd  h3:last-child,.ddd  h3:nth-child(4)
+{
+	background-color: aqua;
+	padding:10px;
+	width:400px;
+	border:1px black solid;
+}
+/*call by attribute*/
+[title]
+{
+background-color: lightgreen;
+text-align:center;
+font-size:30px;
+width:700px;
+}
+a{
+	display: block;
+	font-size:30px;
+	padding:10px;
+	width:400px;
+	margin:5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*a tag states must be in the order of link,visited,hover,active*/
+a:link{
+	background-color:black;
+	color:white;
+}
+a:visited{
+	background-color: pink;
+	color:blue;
+}
+a:hover{
+	text-decoration: underline;
+	background-color: aqua;
+}
+
+a:active{
+	background-color:red;
+	color:white;
+}
+
+fieldset{
+	background-color: lightgrey;
+	border:1px black solid;
+	width:600px;
+	margin:20px auto;
+}
+:valid
+{
+	color:green;
+}
+:invalid{
+	color:red;
+}
+:required{
+	background-color: aqua;
+}
+:optional
+{
+	background-color: orange;
+}
+:checked{
+	box-shadow: 2px 2px 2px blue;
+}
+:disabled{
+	background-color: pink;
+	font-size:20px;
+}
+/*:enabled{
+	background-color: pink;
+	font-size:20px;
+}
+*/
+input:in-range
+{
+	background-color:green;
+}
+input:out-of-range
+{
+	background-color:yellow;
+}
+
+:focus
+{
+	background-color: yellow;
+}
+
+
+	</style>
+</head>
+<body>
+	<h1 align=center title="See It">PsuedoClass- State of Element</h1>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3 title="Important Topic...">This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<hr>
+<div>
+This is Div	
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+</div>
+<hr>
+<a href="#">Home</a>
+<a href="#">Garments</a>
+<a href="https://www.ducatindia.com">Electricals</a>
+<a href="#">FootWear</a>
+<a href="#">Food Items</a>
+<a href="#">Others</a>
+
+<hr>
+<div class="ddd">
+This is Div	
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+<h3>This is Heading3</h3>
+</div>
+<hr>
+<form>
+	<fieldset>
+<label>Name:</label><input type="text" required placeholder="enter name here" name="abc"><br>
+<label>Father's Name:</label><input type="text"  placeholder="enter father here" ><br>
+
+
+<label>Password:</label><input type="password"  required><br>
+<label>Address:</label><input type="text" value="noida" disabled><br>
+<label>course:</label><input type="text" readonly><br>
+
+<label>Age:</label><input type="number" min=20 max=60 step=2 required>
+<br>File:<input type="file" ><br>
+<label>Enter comments:</label><textarea placeholder="write here"></textarea>
+<br>
+<label>Male</label><input type="radio" name="r1">
+<label>Female</label><input type="radio" name="r1" checked>
+<br>
+<label>BA</label><input type="checkbox" name="c1">
+<label>MBA</label><input type="checkbox" name="c2" checked>
+<br>
+
+<label>Fees:</label><input type="number" min=200 max=1000>
+<label>Click me:</label><input type="checkbox">
+
+
+</fieldset>
+</form>
+
+
+
+
+<div title="Wow...">
+	This is Div
+</div>
+<p>
+	Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+</p>
+
+
+
+</body>
+</html>

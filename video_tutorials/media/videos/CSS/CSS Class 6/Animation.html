@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		/*To get an animation to work, you must bind the animation to an element.*/
+		div{
+			width:200px;
+			height: 70px;
+			text-align: center;
+			border:1px black solid;
+						animation-name:ducat;
+			animation-duration:2s;
+			animation-iteration-count: 2;
+			animation-iteration-count: infinite;
+			/*The animation-direction property can have the following values:
+normal - The animation is played as normal (forwards). This is default
+reverse - The animation is played in reverse direction (backwards)
+alternate - The animation is played forwards first, then backwards
+alternate-reverse - The animation is played backwards first, then forwards*/
+			animation-direction: reverse;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+			animation-timing-function:ease-in ;
+/*			Shortcut of above all properties*/
+
+			animation:ducat 2s 1s forwards infinite alternate ease-in;
+					}
+@keyframes ducat{
+/*	from{background: yellow;}
+	to{background: blue;margin-left:700px;font-size:30px;color:white}*/
+	0%{background: yellow;}
+	25%{background: red;margin-top:400px;}
+	50%{background: pink;margin-top:100px;}
+	100%{background: blue;margin-left:900px;font-size:30px;color:white}
+}		
+div:hover{
+	animation-play-state: paused;
+}
+
+
+
+	</style>
+</head>
+<body>
+<h1 align=center>Animation</h1>
+<pre>
+<!-- Animation- Imagination, Not Real 
+Video- Recorded on Real World Entities
+
+/*The animation-timing-function specifies the speed curve of an animation.
+The speed curve defines the TIME an animation uses to change from one set of CSS styles to another.The speed curve is used to make the changes smoothly.*/
+/*animation-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;
+linear	The animation has the same speed from start to end	
+ease	Default value. The animation has a slow start, then fast, before it ends slowly	
+ease-in	The animation has a slow start	
+ease-out	The animation has a slow end	
+ease-in-out	The animation has both a slow start and a slow end	
+step-start	Equivalent to steps(1, start)	
+step-end	Equivalent to steps(1, end)	
+steps(int,start|end)	Specifies a stepping function, with two parameters. The first parameter specifies the number of intervals in the function. It must be a positive integer (greater than 0). The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value "end"	
+cubic-bezier(n,n,n,n)	Define your own values in the cubic-bezier function
+Possible values are numeric values from 0 to 1	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit*/ -->
+</pre>
+<div>
+	Animation
+</div>
+
+</body>
+</html>

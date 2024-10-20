@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+div
+{
+	margin:0 auto;
+width:250px;
+height: 100px;
+border:2px black solid;
+background-color: pink;
+transition:all 1s;
+}
+.trans:hover
+{
+	transform:translate(100px);       /*by default move in x-axis*/
+	transform:translateX(120px);
+	transform:translateY(120px);
+	transform:translateX(120px) translateY(120px);
+}
+/*scale unit mention in number eg. 1.5 or 2 etc.
+*/.sca:hover
+{
+	transform: scale(1.5);
+	transform: scaleX(2);
+	transform: scaleY(0.7);
+	transform:scaleY(1.7) scaleX(1.3);
+}
+.ske:hover
+{
+	transform: skew(30deg);
+	transform: skew(-30deg);
+	transform: skewX(30deg);
+	transform: skewY(-60deg);
+	transform: skewY(30deg);
+	transform: skewX(-30deg) skewY(30deg);
+	
+}
+.rot:hover
+{
+transform:rotate(90deg);
+transform: rotateX(120deg);
+transform:rotateY(0.5turn);
+transform: rotateX(0.5turn);
+transform: rotateX(30deg) rotateY(-45deg);
+transform: rotateX(0.5turn);
+transform-origin: top right;
+transform: rotateX(2turn);
+transform: rotate(0.5turn);
+/*you can apply more than one factor of transform at once
+*/transform: rotate(-0.5turn) translateX(20px) scaleX(0.5);
+
+}
+/*The matrix() method combines all the 2D transform methods into one.
+The matrix() method take six parameters, containing mathematic 
+functions, which allows you to  scale, move (translate), 
+and skew elements.
+
+The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateY()translateX())*/
+.mmm:hover {
+  transform: matrix(1, -0.3, 2, 1, 150, 150);
+}
+
+p
+{
+	width:400px;
+	background-color: lightgrey;
+	border:1px red solid;
+	height: 200px;
+	overflow: hidden;		/*by default it is visible*/
+	overflow: scroll;   	/*In scroll it will display scrollbars horizontally and vertically both*/
+	overflow: auto; /*In Auto it will display scrollbars horizontally and vertically or both but if needed*/
+	overflow-x:scroll;
+	overflow-y: scroll;
+	overflow-x:hidden; /*don't show scrollbar horizontally*/
+
+margin-bottom:100px;
+	
+}
+/*p:hover
+{
+	overflow: visible;
+}*/
+
+
+	</style>
+</head>
+<body>
+
+
+&times;
+
+
+<h2 align=center> Types of Transform</h2>
+<pre> 
+	Transform an element-
+	1)Position Change(translate)
+	2)Scale(width/height -Increment/Decrement)-mention in number eg. 1.5 or 2 etc.
+	3)Skew-slanted rotate in degree
+	4)Rotate-degree or turn
+	5)Matrix- combination of multiple task
+</pre>
+
+<h3 align=center>1. Translate(means change position in width/height wise)</h3>
+
+<div class=trans>
+	I will be moved
+</div>
+
+<h3 align=center>2. Scale(means change size in width/height wise)</h3>
+
+<div class=sca>
+	I will be changed size
+</div>
+<h3 align=center>3. Skew(means stretch size in width/height wise in slanting order)</h3>
+
+<div class=ske>
+	I will be skew
+</div>
+
+<h3 align=center>4. Rotate</h3>
+
+<div class=rot>
+	I will be rotated
+</div>
+<h3 align=center>5. Matrix</h3>
+
+<div class=mmm>
+	Matrix...I will do multiple task.
+	<br>- scale, move (translate),and skew elements by one property.
+</div>
+
+
+<p>
+	 To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the el</p>
+
+
+
+</body>
+</html>

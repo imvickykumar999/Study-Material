@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1 align=center>Pyramids Assignment</h1>
+<pre>
+<!-- 
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+____________________________
+Assignments
+
+1					1					1						*
+2 2					2 3					2 3						* *
+3 3 3 				3 4 5				4 5 6					* * *
+4 4 4 4 			4 5 6 7				7 8 9 10				* * * *
+5 5 5 5 5 			5 6 7 8 9			11 12 13 14 15			* * * * *
+
+A                   	A
+A B                 	B B
+A B C              		C C C
+A B C D            		D D D D
+A B C D E             	E E E E E
+
+______________________________________________________________________________
+ASCII= American Standard Code for Information Interchange
+Every character in the keyboard has some ASCII code from 0-255 which is fixed. and this ASCII code will be converted into Machine lang
+eg.
+A-65				a-97				0-48 space=32
+B-66				b-98				1-49
+..					...					...
+Z-91				z-123				9- -->
+
+</pre>
+<script type="text/javascript">
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+	var r,c
+	for(r=1;r<=5;r=r+1)
+	{
+		for(c=1;c<=r;c=c+1)
+		{
+			document.write(`&emsp;${c}`)
+		}
+		document.write(`<br>`)
+	}
+	document.write(`<hr>`)
+	//________________________________
+// 1
+// 2 2
+// 3 3 3
+// 4 4 4 4
+// 5 5 5 5 5
+	var r,c
+	for(r=1;r<=5;r=r+1)
+	{
+		for(c=1;c<=r;c=c+1)
+		{
+			document.write(`&emsp;${r}`)
+		}
+		document.write(`<br>`)
+	}
+	document.write(`<hr>`)
+	//________________________________
+// 1
+// 2 3
+// 3 4 5
+// 4 5 6 7
+// 5 6 7 8 9
+	var t
+	for(r=1;r<=5;r=r+1)
+	{
+		t=r
+		for(c=1;c<=r;c=c+1)
+		{
+			document.write(`&emsp;${t}`)
+			t=t+1
+		}
+		document.write(`<br>`)
+	}
+document.write(`<hr>`)
+	//________________________________
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+// 11 12 13 14 15
+	var t=1
+	for(r=1;r<=5;r=r+1)
+	{
+
+		for(c=1;c<=r;c=c+1)
+		{
+			document.write(`&emsp;${t}`)
+			t=t+1
+		}
+		document.write(`<br>`)
+	}
+document.write(`<hr>`)
+	//________________________________
+// *
+// * *
+// * * *
+// * * * * 
+//* * * * * 
+
+	for(r=1;r<=5;r=r+1)
+	{
+
+		for(c=1;c<=r;c=c+1)
+		{
+			document.write(`&emsp;*`)
+		
+		}
+		document.write(`<br>`)
+	}
+document.write(`<hr>`)
+	//________________________________
+// A                   		A
+// A B                 		B B
+// A B C              		C C C
+// A B C D            		D D D D
+// A B C D E             	E E E E E
+var t
+for(r=1;r<=5;r=r+1)
+	{
+		t=65
+		for(c=1;c<=r;c=c+1)
+		{
+			document.write(`&emsp;${String.fromCharCode(t)}`)
+			t=t+1
+		}
+		document.write(`<br>`)
+	}
+document.write(`<hr>`)
+	//________________________________
+
+
+//                   	A
+//                 		B B
+//             			C C C
+//       				D D D D
+//           			E E E E E
+var t=65
+for(r=1;r<=5;r=r+1)
+	{
+		for(c=1;c<=r;c=c+1)
+		{
+			document.write(`&emsp;${String.fromCharCode(t)}`)
+			
+		}
+		t=t+1
+		document.write(`<br>`)
+	}
+document.write(`<hr>`)
+	//________________________________
+
+
+
+</script>
+</body>
+</html>

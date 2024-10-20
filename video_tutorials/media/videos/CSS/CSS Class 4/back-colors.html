@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+/*apply on all tags*/
+		*
+		{
+			margin:0 auto;
+		}
+		pre{
+			white-space: pre-wrap;
+		}
+
+body
+{
+	background-color: lightgrey;
+}
+:root
+{
+background-color: pink;
+
+}
+
+
+	
+div
+{
+	width:400px;
+	height:400px;
+background-color: pink;
+border:3px red solid;
+margin-left:300px;
+background-color: #A2D9CE;					/*hex-color code*/	
+background-color: rgb(255,0,0);          /*pure red*/
+background-color: rgb(0,255,0);				/* pure green */
+background-color: rgb(0,0,255);				/* pure blue */
+background-color: rgb(0,0,0);				/* pure black */
+background-color: rgb(255,255,255);				/* pure white */
+background-color: rgb(125, 60, 152);				
+/*opacity:0.6;				 opacity will be from 0-1*/
+background-color: rgba(125, 60, 152,0.6);	  /*a means alpha(opacity)*/
+background-color: hsl(28, 90%, 22%);
+background-color: hsla(120, 90%, 22%,0.3);
+/*gradient colors will be active only with background or background-image, it will not react with background-color*/
+background: linear-gradient(yellow,#CACCEC ,pink,rgb(196, 229, 32 ));
+background-image: linear-gradient(yellow,#CACCEC ,pink,rgb(196, 229, 32 ));
+background: radial-gradient(yellow,red,#CACCEC ,pink,rgb(196, 229, 32));
+background-image: linear-gradient(yellow,#CACCEC ,pink,rgb(196, 229, 32 ));
+background-image: radial-gradient(red 5%,yellow 10%,green,purple);
+
+background: linear-gradient(to top right, red,white,blue, green);
+background: linear-gradient(to top left, red, green, blue);
+background: radial-gradient( closest-side at 150px 50px, #C24704, #FFEB79 35%, #00ADA7);
+/*repeating will create a pattern*/
+background: repeating-linear-gradient(100deg, blue, yellow,red 30px);
+background: linear-gradient(to top right, red,white, green);
+background: linear-gradient(to top left, red, green, blue);
+/*The positions of the color stops aren’t specified, so they default to 0%, 50%, and 100%, respectively*/
+ background:linear-gradient(225deg, red,yellow, green);
+/*Setting the angle of the gradient like this locates the starting and ending points outside the gradient box. */
+
+background: radial-gradient(circle closest-side at 150px 150px, #C24704, #FFEB79 35%, #00ADA7);
+
+background: repeating-linear-gradient(-45deg, blue, yellow 6px);
+/*This sets the angle of the gradient line to –45°, and creates two color stops.*/
+
+background: radial-gradient(circle 100px at 75px 60px, rgba(255,255,255,0.8),  transparent);
+ background:radial-gradient(circle at 30% 30%, #C51D31, #921524, #450A11);
+ 
+
+
+background: radial-gradient(circle farthest-corner at 20px 20px, red , blue 15%, white,yellow);
+
+background: repeating-linear-gradient(to right, purple, pink 5%, #D9CC3C 10%);
+
+background:radial-gradient(red ,yellow 10%,green 25%,white,blue);
+background: linear-gradient(20deg, blue, yellow,green);
+background: repeating-linear-gradient(to left, purple, red 3%,pink 5%, #D9CC3C 10%);
+
+
+background:radial-gradient(circle farthest-corner at 60px 60px, red , blue 15%, green,yellow);
+background: repeating-linear-gradient(to left, purple, red 3%,pink 5%, #D9CC3C 10%);
+background: repeating-radial-gradient(red,blue 20%,white 10%, blue 5%);
+background: conic-gradient(red, #E1ECA3,yellow,rgba(26, 94, 229,0.3),black);
+background:repeating-linear-gradient(blue,red,pink 70px,aqua 20px);
+ background:radial-gradient(circle at 50% 50%, white, #921524, #450A11);
+ background:repeating-conic-gradient( red 0deg 30deg, yellow 30deg 60deg, blue 60deg 90deg);
+background: conic-gradient(yellow,blue ,pink,rgb(196, 229, 32 ));
+
+}
+</style>
+
+</head>
+<body>
+<h2 align=center> Different Types to Mention Colors</h2>
+<pre>
+Different Types to Mention Colors-
+a)Color Name
+b)Hex color code
+c)rgb()
+d)rgba()
+e)hsl()
+f)hsla()
+g)linear-gradient
+h)radial-gradient
+i)conic-gradient
+j)repeating-linear-gradient- pattern
+k)repeating-radial-gradient
+l)repeating-conic-gradient
+________________________________________________
+Color Modes-
+1)RGB-Every digital screen(Tv,Laptop,Mobile,Desktop ar any other electronic gadget having screen) supports RGB mode. It means red,green and blue pixels, which are from 0-255 = total 256 pixels
+
+2)HSL-Hue, Saturation and Luminance(brightness)
+Hue-degree value from color wheel( 0-359 deg)
+
+Saturation-value in percentage(1%-100%), amount of grey color add or subtract.If saturation decrease it will add grey and vice versa.
+
+Luminance(brightness)-Value in percentage(1%-100%), amount of black add or subtract. If luminance decrease it will add black and vice versa.
+
+3)CMYK-Cyan Megenta Yellow Black
+Used in publishing(printing)
+value in 0-100%
+</pre>
+<div>
+Types of Background Colors
+</div>
+</body>
+</html>
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style>
+.col
+{
+column-count:9;
+column-gap: 10px;
+column-rule:2px green solid;
+column-rule-width: 3px;
+column-rule-color: red;
+column-rule-style:dashed;
+column-width:100px;    /* this is the minimum width to be maintained*/
+
+}
+.sha
+
+{
+	 	 
+	 
+	 column-count:3;
+	 column-width:auto;
+	 column-fill:balance;
+	 column-span:all;
+	}
+	 img
+	 {
+	 width:200px;
+	height:200px;
+	 border:5px solid blue;
+
+	 	}
+	.pic1
+{	 shape-outside: circle(); 
+	 shape-margin: 5px;
+	 border-radius:50%;
+	 float:left;
+	}
+	.pic2
+	{
+/*The clip property lets you specify a rectangle to clip an absolutely positioned element. The rectangle is specified as four coordinates, all from the top-left corner of the element to be clipped.
+2nd and 3rd coords are for width and height
+Note: The clip property does not work if "overflow:visible".*/
+	  position: absolute;
+  clip: rect(0px,120px,150px,0px);
+  
+
+}
+
+	 .other {
+	 	/*shape-outside is for setting of text around image or shape*/
+      shape-outside: ellipse(40px 100px at 20% 38%); 
+      
+      clip-path: ellipse(40px 100px at 20% 38%);
+     /* The clip-path property lets you clip an element to a basic shape or to an SVG source*/
+       shape-margin: 2px;
+      width: 400px;
+      height: 500px;
+      float: left;
+          background-color:lightgreen;
+      }
+
+.abc
+{
+	width:900px;
+	height:400px;
+	background-image:url(image/2.jpg);
+	background-size:100% 100%;
+	
+	clip-path:polygon(0px 0px,800px 0px,800px 250px,50% 350px,0px 250px,0px 0px);
+
+}
+.abc>section
+{
+	width:900px;
+	height:400px;
+	background-color:rgba(0,0,0,0.4);
+	color:white;
+	font-size:20px;
+}
+
+
+</style>
+</head>
+<body>
+	<h1 align=center> Text with Image and text wrapping</h1>
+<div class=sha>
+	Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look 
+professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the 
+<img src="koala.jpg" class=pic1>
+elements you want from the different galleriprofessionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleri
+fessionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleriprofessionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleri
+</div>
+<hr>
+
+<div class=col>
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
+</div>
+<hr>
+<div class="abc">
+	<section>
+		Example of  clip-path <br>
+		Can be used to show the elements area to be clipped
+	</section>
+
+</div>
+<hr>
+<h1 align=center> Other Example</h1>
+<div class=other>DUCAT</div>
+ <p > Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was <img src="koala.jpg" class="pic2">popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is dummied text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150</p>
+ <hr>
+<div>hello</div>
+<div>hello</div>
+<div>hello</div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		h1,h6
+		{
+			background-color: lightgreen;
+			text-align: center;
+			padding:10px;
+		}
+		img
+		{
+			width:70px;
+			height: 70px;
+			border:1px black solid;
+		}
+		p,div
+		{
+			background-color: lightyellow;
+			border:1px black solid;
+			width:500px;
+			margin:10px;
+		}
+
+	</style>
+</head>
+<body>
+
+
+
+<h1>Types of Tags</h1>
+<ol>
+<li>Semantic & Non Semantic tags</li>
+
+<li>Container tags & Empty Tags</li>
+
+<li>Block & Inline Tags</li>
+<li>Paired / Unpaired Tags</li>
+</ol>
+
+<pre>
+<!-- Semantic & non-Semantic Tags
+
+A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: div ,nav,header , footer ,section and span etc.- Tells nothing about its content to the browser. Examples of semantic elements: form , table , and article- Clearly defines its content.
+_______________________________	
+Block & Inline Tags-
+Block- eg. h1-h6,p,div etc., They will block the entire line of tag
+Inline- img,a ,input, span etc.
+___________________________________
+Container tags
+Eg. div,section etc. are container tags bcoz they can contain all its child elements with it either block level / Inline Elements
+P tag is not a container(parent) tag. Becoz it cannot contain block level elements
+_______________________________
+ Paired / Unpaired Tags
+ Paired tags require an opening tag that turns a formatting feature on and a closing tag that turns the feature off. Paired tags must surround the text you want formatted with that feature. For example, <u> and </u> will underline text. You must include the slash ( / ) in the closing tag in order for the pair to work.
+
+Unpaired tags work alone, and are usually placed before the text you want formatted.
+ -->
+</pre>
+
+Welcome<h6>This is Heading6.....Block level tag</h6> Friends
+<!-- Div,section,header,footer,nav and many more tags are container tags ....Parent tag -->
+<div style="background-color: pink;">
+div...To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.<h6>This is heading under div</h6>
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.<img src="pic5.jpg" title="I am Inline">
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.</div>
+<!-- p is not a container tag, cannot be a parent for others bcoz it cannot contain block level elements under it-->
+<p>
+	Para...To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.<img src="pic5.jpg" title="I am Inline">
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a <h6>This is heading under para</h6>button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
+
+</p>
+
+
+
+
+</body>
+</html>

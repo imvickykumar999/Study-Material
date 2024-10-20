@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.hello
+		{
+			background-color: yellow;
+			width:500px;
+			text-align: center;
+			padding:10px;
+			border:1px black solid;
+		}
+
+
+
+	</style>
+	<!-- Not recommended to mention JS in head but you can  use in exceptional case-->
+<script type="text/javascript">
+	document.write("This is Head part...")
+</script>
+
+
+</head>
+<body>
+<h1 align=center>JS First Class </h1>
+<pre>
+<!-- HTML- Layout/Structure of the webpage
+	Tags & Attributes
+CSS- Look & Feel of the webpage Elements
+	property:value
+Bootstrap- Responsive WebSite
+	Predefined Classes
+
+	1)Static website
+2)Dynamic website-Event handling, form validation etc.
+
+JS- Dynamic Website
+	Means handle Events done by user and Form Validation
+			object.method() or object.property
+
+JS is Object Based language
+______________________________
+1)Object on which event done???
+2)Event??? 
+3)which Object will react???
+4)What to do??   search for
+	object.property
+	object.method()
+	object.property.method()
+_____________________________________
+Events done by user-
+
+1)Keyboard----oninput,onchange,onkeypress,onkeyup,onkeydown etc.
+2)Mouse---onclick,onmouseover,onmouseout,ondblclick etc.
+3)window---onload,onunload,onscroll,onresize
+4)Form---onchange,onfocus,onblur,oninput etc.
+_______________________________________
+
+2 types of Script language
+
+1)Client-side: Client-side scripting languages focus on the parts of a website or web application that the end user (or client) interacts with directly,don't need any server. eg. Javascript,VBscript
+
+2)Server-side: Server-side scripting languages interact directly with and run on the server. These scripts are typically invisible to the end user.So it needs any web server with web browser to work. eg. PHP,Python,JAVA etc.
+____________________________________
+
+ECMA International (formally European Computer Manufacturers Association) is a non-profit organization that develops standards in computer hardware, communications, and programming languages.
+ECMAScript is a scripting language specification on which JavaScript is based. ECMA International is in charge of standardizing ECMAScript.
+JS -First appeared	December 4, 1995; 28 years ago[1]
+Stable release	
+Stable release	
+ECMAScript 2024[2] Edit this on Wikidata / June 2024; 3 months ago
+
+JS is a Mother language ,and developed many frameworks and library files eg.
+ React JS, Angular JS, NodeJS,ViewJS,NextJS,ExpressJS, Jquery etc.
+__________________________________
+JS Rules-
+
+1)case sensitive language.   almost in small-case, but some methods and properties are in camelcase. eg. document.getElementById
+2)end each statement with ; but not mandatory ,use only when write statements in a single line
+3)JS is object based language. Every object has some properties and methods.
+
+ eg.car-object
+color,price,model---property
+start,stop----methods(functions)
+________________________________
+
+JS is Interpreter based language -
+
+Computer understands only machine(binary language) language means 0,1 so we need any translator to convert the high lang code into machine language 
+
+Translator-1)Compiler 2)Interpreter
+
+Compiler - Translates whole source code into machine lang at once eg. c,c++
+Interpreter - It will translate the code line by line
+
+__________________________________________________
+There are two types  of comments in JavaScript.
+
+Single-line Comment-      //
+Multi-line Comment-      /*             */
+
+__________________________________________
+Three Places to put JavaScript code
+1At the end of the body tag of html 
+2.Between the head tag of html but recommended to give in body part at the end of body part
+3.In seperate .js file (external javaScript) and link that file  at the end of body
+_________________________________________
+
+External file of JS -
+Advantages of External JavaScript file--
+There will be following benefits if a user creates an external javascript:
+It helps in the reusability of code in more than one HTML file.
+It allows easy code readability.
+It is time-efficient as web browsers cache the external js files, which further reduces the page loading time.
+It enables both web designers and coders to work with html and js files parallelly and separately, i.e., without facing any code conflictions.
+The length of the code reduces as only we need to specify the location of the js file.
+
+Disadvantages of External JavaScript--
+
+There are the following disadvantages of external files:
+The stealer may download the coder's code using the url of the js file.
+If two js files are dependent on one another, then a failure in one file may affect the execution of the other dependent file.
+
+__________________________________________________
+Output methods in JS
+1)document.write()
+2)console.log()
+3)window.alert()/ alert()
+4)innerHTML 
+
+-->
+
+</pre>
+
+<div class=hello id="ddd">This is Div </div>
+<br>
+<button onclick="document.getElementById('ddd').innerHTML='Wow....Div content is changed'
+">Change Content of Div</button>
+
+
+<!-- Internal JS -->
+<script type="text/javascript">
+	// Methods of output	
+// 1. document.write()-display in body
+		// You can use any HTML tag in document.write
+	document.write("<h3 >Output Method- 1. document.write()</h3>")
+	document.write("Hello....First Class of JS")
+//2. console.log()-press f12 to see the info in console,use for debugging by programmer only , not for user
+
+	console.log("This is Console ")
+
+// 3. alert()-display in seperate popup or window.alert() bcoz alert is method of window object
+alert("Wow!...");
+window.alert("Very Interesting...")
+// document.getElementById("ddd").innerHTML="Wow....Div content is changed"
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	svg
+	{
+		background-color: lightgrey;
+		border:2px red solid;
+		width:1200px;
+		height:900px;
+	}
+	
+text
+{
+	text-shadow: 2px 2px 2px red;
+	font-size: 40px;
+	font-family: jokerman;
+}
+
+</style>
+
+
+</head>
+<body>
+<pre>
+Graphics software-coreldraw, photoshop, illustrator etc.
+Graphics are of 2 types-
+1)Raster/Bitmap- These graphics are made up of dots or pixels. That's why they are pixelate when zoom.
+ All camera pics are raster by default. eg. Photoshop 
+    
+2)Vector- These are made up of curves or lines. 
+That's why don't pixelate when zoom. eg. Coreldraw(used for logo design) & Illustrator
+
+
+Two Tags for graphics in HTML
+
+1)SVG---only use HTML 
+2)CANVAS ---but has to be used with JS
+</pre>
+<h1> use of SVG(Scalable Vector Graphics)</h1>
+	<div>Here are several good reasons for exploring SVG as a format – it is not intended as a replacement for JPEG or PNG images; the formats work in different ways. SVG as a format really shines when used to display vector images on the web.Because SVG files are vector graphics (as opposed to pixel-based raster images), you can resize them without losing image quality. This is especially helpful when you are creating responsive websites that must look good and work well across a wide range of screen sizes and devices
+
+<ol>
+ <li>SVG-based images do not lose quality when they are resized or
+zoomed in the browser;</li>
+<li> SVG images can be animated using JavaScript or CSS;</li>
+<li> SVG images integrate with the DOM very well, and they can be
+manipulated using JavaScript or CSS;</li>
+<li> SVG images can be indexed by search engines, which is perfect for
+SEO purposes;</li>
+<li> SVG images can be printed at any resolution.</li>
+</ol>
+
+   
+<h1 align=center>SVG-Scalable Vector Graphics</h1>
+<svg fill=yellow stroke-width=8 stroke=red>
+		<!-- defination to use radial-gradient -->
+
+<defs>  
+	<radialGradient id="ducat1" x1="0%" y1="0%" x2="100%" y2="0%">  
+		<stop offset="0%" style="stop-color:green;" /> 
+		<stop offset="50%" style="stop-color:pink;" /> 
+		 <stop offset="100%" style="stop-color:blue;" />  
+</radialGradient> 
+</defs>
+<defs>  
+	<radialGradient id="ducat3" x1="0%" y1="0%" x2="100%" y2="0%">  
+		<stop offset="0%" style="stop-color:blue;" /> 
+		<stop offset="50%" style="stop-color:white;" /> 
+		<stop offset="75%" style="stop-color:yellow;" /> 
+		 <stop offset="100%" style="stop-color:green;" />  
+</radialGradient> 
+</defs>
+	<!-- defination to use linear-gradient -->
+
+<defs>  
+	<linearGradient id="ducat2" x1="0%" y1="0%" x2="100%" y2="0%">  
+		<stop offset="0%" style="stop-color:red;" /> 
+		<stop offset="30%" style="stop-color:pink;" /> 
+		<stop offset="65%" style="stop-color:yellow;" /> 
+		 <stop offset="100%" style="stop-color:blue;" />  
+</linearGradient> 
+</defs>
+
+
+<!-- to use already created defination of gradient use it in fill by url(#..) -->
+<!-- stroke-linejoin types are meter , round, bevel
+ -->
+<rect x=30 y=50 width=200 height=150 stroke-width=15 stroke-linejoin=round fill=url(#ducat1)></rect>
+	<!-- for square -->
+<rect x=250 y=50 width=150 height=150 fill=green stroke-width=8 stroke=purple></rect>
+<!-- in ellipse radius is not equal so mention width and height wise different radius -->
+<ellipse cx=130 cy=280 rx=100 ry=50 fill=url(#ducat2)></ellipse> 
+
+<ellipse cx=500 cy=110  rx=80 ry=60></ellipse>
+<!-- Circle-same radius -->
+
+<circle cx=350  cy=320 r=100 fill=url(#ducat3) stroke-width=8 stroke=blue></circle>
+<text x=300 y=300 stroke=green stroke-width=1  fill=pink> DUCAT</text>
+<!-- vertical line -->
+<line x1=600 y1=50 x2=600 y2=250></line>
+<!-- Horizontal line -->
+<line x1=30 y1=370 x2=230 y2=370 stroke=purple stroke-linecap=butt></line>
+<!-- slanting line -->
+<line  x1=500  y1=230 x2=700 y2=450></line>
+<!-- Draws open polygon or polyline(open shape)-->
+<polyline  points="620 50,700 200,900 400, 700 100"></polyline>
+<!-- triangle ---- Draws close polygon -->
+<polygon points="20 520,150 700,100 500"></polygon>
+
+<polygon points="520 520,650 700,600 500,400 400,250 340"></polygon>
+<line x1=800 y1=450 x2=1200 y2=450></line>
+<line x1=760 y1=500 x2=760 y2=800></line>
+
+<!-- can display image also by SVG -->
+<image x="800" y="500" width="30%" height="40%" src="1.jpg"/>
+	
+</svg>
+
+
+
+
+
+
+
+

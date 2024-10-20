@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1 align=center>Operators</h1>
+<!-- /*
+Operators:  some special symbols which are used
+            to perform some predefine operations
+            on operands(variables,constants etc i.e
+            a value)
+Category on Basis of number of Operands:
+1. Unary    :   Required only one operand eg. var a=6 , a++ (a=a+1)   
+2. Binary   :   Required two operands
+3. Ternary  :   Required three Operands - ternary
+___________________________________________________
+Types -
+1. Arithmetic Operators
+2. Assignment Operator
+3. Composite/Compound/Short Hand Operators
+4. Relational Operator
+5. Logical Operators
+6. Bitwise Operators
+7. Conditional Operator
+8. Increment Operator
+9. Decrement Operator
+10. Misc. Operator- call object member
+ */
+
+/*
+Arithmetic Operators:
+    +   Addition
+    -   Subtraction
+    *   Multiplication
+    /   Division(Quotient)
+    %   Modulus(Remainder)
+    **  Power
+
+    Type: Binary
+    Precedence: L to R
+    Priority: 
+                1. Brackets
+                2. **
+                3. * / %
+                4. + -
+ */
+/*
+Assignment Operator(=):
+used to assign value of RHS operand to LHS operand
+eg. sum=a+b;    //valid
+eg. a+b=sum;    //invalid
+eg. a=b=c;      //valid
+
+type: Binary
+Precedence: R to L
+ */
+
+/* Composite/Compound/Short Hand Operators
+                combination of Assignmnet Operator with other 
+                operators
+    a=a+b         =>      a+=b
+    a=a-b         =>      a-=b
+    a=a*b         =>      a*=b
+    a=a/b         =>      a/=b
+    a=a%b         =>      a%=b
+    a=a**b        =>      a**=b
+*/
+
+/*
+    Relational Operator:
+    used to compare two operands
+    <       Less Than
+    <=      Less Than Equal
+    >       Greater Than 
+    >=      Greater Than Equal
+    !=      not Equal       (check only value)
+    !==     not Identical   (check value and data type both)
+    ==      Equal           (check value only)
+    ===     Identical       (check value and data type both)
+ */
+/*
+    Logical Operators:
+    used to make a compound condition
+
+    Operator    symbol  operation               type    precedence
+    Logical And &&      return true if all      binary  L to R
+                        conditions are true
+                        else return false
+    Logical Or  ||      return true if atleast  binary  L to R
+                        one condition is true
+                        else return false
+    Logical Not !       return true if condition Unary  R to L
+                        is false and return 
+                        false if condition is 
+                        true
+ */
+
+
+/*
+All the bitwise operators work at the bit level after converting operands to binary format. Bitwise AND returns 1 if both the bits are 1 else 0. Bitwise OR returns 1 if at least one of the bits is 1 else 0. Bitwise XOR only returns 1 if both operands are different Bitwise Operator:
+Operators               Symbols     Type    Precedence
+1. Bitwise And          &           Binary  L to R
+2. Bitwise Or           |           Binary  L to R
+3. Bitwise Xor          ^           Binary  L to R
+4. Bitwise Left Shift   <<          Binary  L to R
+5. Bitwise Right Shift  >>          Binary  L to R
+6. Bitwise Negation     ~,-         Unary   R to L
+
+a   b   a&b a|b a^b(a|b - a&b)
+0   0   0    0   0
+0   1   0    1   1
+1   0   0    1   1
+1   1   1    1   0
+ */
+
+/*
+Bitwise Left Shift and Right Shift
+Biwise Left Shift
+        num<<n
+    i.e num*2**n
+    eg. 25<<10
+    eg. 25*2**10
+    i.e 25*1024
+    i.e 25600
+
+Bitwise Right Shift
+        num>>n
+    i.e num/2**n
+    eg. 2500>>5
+    eg. 2500/2**5
+    i.e 2500/32
+    i.e 78
+ */
+
+/*
+Bitwise Negation Operator:
+                    ~
+                    (-x-1)
+        +ve 20                     -ve  -30
+
+        -ve -20                    +ve  30
+        -1  -1                     -1   -1
+        ----------------------------------
+            -21                         29
+                    -
+                    (-x)
+        +ve 20                     -ve  -30
+
+        -ve -20                    +ve  30
+        ----------------------------------
+            -20                         30
+*/
+
+/*
+
+Conditional Operator or Ternary Operator(?:)
+used when we have to execute a statement out of
+two statements according to a condition
+syntax:
+condition?Statement1:Statement2;
+            True      False
+ */
+
+
+/*
+                Increment(++)  i.e x=x+1
+        Pre-Increment           Post-Increment
+        (++oprand)              (operand++)
+        -------------           --------------
+        First Increment         first Assignment
+        then Assignment         then Increment
+
+                 Decrement(--)  i.e x=x-1
+        Pre-Decrement           Post-Decrement
+        (--oprand)              (operand--)
+        -------------           --------------
+        First Decrement         first Assignment
+        then Assignment         then Decrement
+ */ -->
+
+<script type="text/javascript">
+	// Arithmetic Operators
+	x=20
+	y=15
+	document.write(`<h2>Arithmetic Operators</h2>`)
+
+	document.write(`<br>Addition of Numbers:${x+y}`)
+	document.write(`<br>Subtraction of Numbers:${x-y}`)
+	document.write(`<br>Multiplication of Numbers:${x*y}`)
+	document.write(`<br>Division of Numbers:${x/y}`)
+	document.write(`<br>Remainder after Division of Numbers:${x%y}`)
+		document.write(`<br>Power  of Numbers:${x**3}`)
+		//Comparision Operator
+document.write(`<h2>Comparision Operators</h2>`)
+
+var a,b
+a=50			//number
+b="50"			//string
+//check a==b
+document.write(`<br>Compare Numbers a==b:${a==b}`)
+document.write(`<br>Compare Numbers a===b:${a===b}`)
+document.write(`<h2>Composite/Compound/Short Hand Operators</h2>`)
+/* Composite/Compound/Short Hand Operators*/
+var x=60
+document.write(`<br>Value of x is ${x}`)
+document.write(`<br>Value of x is x+=100 is ${x+=100}`)
+document.write(`<br>Value of x is x-=50 is ${x-=100}`)
+document.write(`<br>Value of x is x*=25 is ${x*=25}`)
+document.write(`<br>Value of x is x/=10 is ${x/=10}`)
+document.write(`<br>Value of x is x%=5 is ${x%=5}`)
+
+document.write(`<h2>Logical  Operators</h2>`)
+
+//compare 3 numbers and display greatest number
+var x,y,z,ans
+x=parseInt(prompt("Enter First Number"))
+y=parseInt(prompt("Enter First Number"))
+z=parseInt(prompt("Enter First Number"))
+
+// if(x>y)
+// {
+// 	if(x>z)
+// 	{
+// 		ans=x
+// 	}
+// 	else
+// 	{
+// 		ans=y
+// 	}
+// }
+// else
+// {
+// 	if(y>z)
+// 	{
+// 		ans=y
+// 	}
+// 	else
+// 	{
+// 		ans=z
+// 	}
+// }
+		//document.write(`<br>Greatest Number is ${ans}`)
+
+// if(x>y && x>z)
+// {
+// 	ans=x
+// }
+// else
+// {
+// 	if(y>z)
+// 		ans=y
+// 	else
+// 		ans=z
+// }
+// 		document.write(`<br>Greatest Number is ${ans}`)
+
+
+document.write(`<h2>Conditional Operator or Ternary Operator(?:)</h2>`)
+//compare 2 numbers and display greatest number
+// ans=x>y?x:y
+// document.write(`<br>Greatest Number is ${ans}`)
+//compare 3 numbers and display greatest number
+ans=x>y?x>z?x:z:y>z?y:z
+document.write(`<br>Greatest Number is ${ans}`)
+document.write(`<h2>Post Increment/Pre Increment</h2>`)
+var z=100
+//Post Increment/Decrement
+
+// document.write(`<br>Value of z  is ${z}`)
+// document.write(`<br>Value of z++  is ${z++}`)
+// document.write(`<br>Value of z is ${z}`)
+//Pre Increment/Decrement
+document.write(`<br>Value of z  is ${z}`)
+document.write(`<br>Value of ++z  is ${++z}`)
+</script>
+<hr>
+<p>
+	Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match 
+</p>
+
+
+
+
+
+
+</body>
+</html>

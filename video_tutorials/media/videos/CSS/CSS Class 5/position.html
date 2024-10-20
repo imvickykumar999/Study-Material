@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		div{
+			width:200px;
+			height: 70px;
+			border:1px black solid;
+			margin:10px;
+			text-align:center;
+			background: lightblue;
+		}
+/*		position:static will not respond to top,bottom,left,right & z-index bcoz static is default value of position property*/
+.st{
+	position:static;
+	top:100px;
+	left:200px;
+}
+/*		position:relative will  respond to top,bottom,left,right & z-index according to its previous element*/
+.rr{
+	position:relative;
+	top:100px;
+	left:400px;
+	background: pink;
+}
+/*		position:absolute will  respond to top,bottom,left,right & z-index according to its parent element if it has otherwise according to body*/
+.aa1{
+	position:absolute;
+	top:100px;
+	left:200px;
+	background: aqua;
+}
+
+section{
+	width:350px;
+	height:200px;
+	background: lightgreen;
+	border:1px black solid;
+	position:relative;
+
+}
+.aa2{
+	position:absolute;
+	top:50px;
+	left:100px;
+	background: yellow;
+}
+/*		position:fixed will  respond to top,bottom,left,right & z-index according to  body but reamins fixed at its position when body scrolls*/
+
+.ff{
+	position:fixed;
+	top:50px;
+	left:100px;
+	background: red;
+	color:white;
+}
+/*		position:sticky will  respond to top,bottom,left,right & z-index according to  its previous element like relative position but reamins fixed at its position when body scrolls and pass through it*/
+
+.sk{
+	position:sticky;
+	top:50px;
+	left:500px;
+	background:blue;
+	color:white;
+}
+
+	</style>
+</head>
+<body>
+<h1 align=center>Position:static(default),relative ,absolute,fixed,sticky</h1>
+<h2 align=center>top,bottom,left,right,z-index- These properties will not work without position property</h1>
+
+<div class="st">Position:Static</div>
+<p>
+	Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a u want to add a row or a colto stop reading before you reach Video provides a powerful way to help you
+</p>
+<div class="rr">Position:Relative</div>
+
+<div class="aa1">Position:Absolute Without parent</div>
+<section>
+<div class="aa2">Position:Absolute with parent</div>
+</section>
+<div class="ff">Position:Fixed</div>
+<div class="sk">Position:Sticky</div>
+
+<p>
+	Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where ver page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you waver page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you waver page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you waver page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you wayou want to add a row or a column, and then click the plus sign.
+Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach Video provides a powerful way to help you
+</p>
+</html>

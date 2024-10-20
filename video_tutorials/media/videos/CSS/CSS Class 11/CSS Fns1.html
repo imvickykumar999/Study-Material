@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+:root{
+	--hello:linear-gradient(lightblue,aqua,pink);
+	--x:400px;
+	counter-reset: y;
+}
+
+
+		div{
+			width:800px;
+			background: var(--hello);
+			height: 300px;
+			border:1px black solid;
+			padding:10px;
+			width:calc(90% - 20px);
+			height:var(--x);
+			width:max(80%,500px);
+			width:min(80%,500px);
+
+		}
+		p,h1{
+			background:var(--hello);
+			width:var(--x);
+
+		}
+		h3:after{
+			counter-increment: y;
+			content:counter(y);
+		}
+		li:after{
+			content:' 'attr(title)' ';
+		}
+		a{
+			display:block;
+			padding:10px;
+			text-decoration: none;
+		}
+
+		a:before{
+			content:' ' attr(href) ' ';
+		}
+	</style>
+</head>
+<body>
+<h1 align=center>CSS Functions</h1>
+<h2 align=center>Values of many properties are in the form of functions</h2>
+<pre>
+	<!-- Function	Description
+attr()	Returns the value of an attribute of the selected element
+calc()	Allows you to perform calculations to determine CSS property values
+conic-gradient()	Creates a conic gradient
+counter()	Returns the current value of the named counter
+cubic-bezier()	Defines a Cubic Bezier curve
+hsl()	Defines colors using the Hue-Saturation-Lightness model (HSL)
+hsla()	Defines colors using the Hue-Saturation-Lightness-Alpha model (HSLA)
+linear-gradient()	Creates a linear gradient
+max()	Uses the largest value, from a comma-separated list of values, as the property value
+min()	Uses the smallest value, from a comma-separated list of values, as the property value
+radial-gradient()	Creates a radial gradient
+repeating-conic-gradient()	Repeats a conic gradient
+repeating-linear-gradient()	Repeats a linear gradient
+repeating-radial-gradient()	Repeats a radial gradient
+rgb()	Defines colors using the Red-Green-Blue model (RGB)
+rgba()	Defines colors using the Red-Green-Blue-Alpha model (RGBA)
+var()	Inserts the value of a custom property
+ -->
+</pre>
+<h3>This is Heading3 Topic</h3>
+<h3>This is Heading3 Topic</h3>
+<h3>This is Heading3 Topic</h3>
+<h3>This is Heading3 Topic</h3>
+<h3>This is Heading3 Topic</h3>
+<h3>This is Heading3 Topic</h3>
+
+
+<ol>
+	<li title="very nice">Home</li>
+	<li title="Read It">About</li>
+	<li title="Best Quality">Products</li>
+	<li title="Beat Services">Services</li>
+	<li title="Call Me">Contact</li>
+
+</ol>
+<hr>
+<a href="1.jpg">Garments</a>
+<a href="2.jpg">Electricals</a>
+<a href="table.html">Food Items</a>
+<a href="3.jpg">Footwears</a>
+<hr>
+<div>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+</div>
+<h3>This is Heading3</h3>
+<p>
+	To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme,</p>
+
+
+
+
+
+</body>
+</html>

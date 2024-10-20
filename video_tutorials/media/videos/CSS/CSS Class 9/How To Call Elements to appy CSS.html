@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+/*		1. apply on all elements*/
+		*
+		{
+			margin:0;
+			box-sizing: border-box;
+		}
+/*		2):root    -apply on base of webpage*/
+
+:root{
+	background-color: lightblue;
+}
+/*3)body    -used area of webpage*/
+body{
+	background-color: #c7f3d0 ;
+}
+/*4)call by Selector(tagname)*/
+		div{
+			width:600px;
+			background: lightgrey;
+			border:2px black solid;
+			padding:10px;
+		}
+		h2
+		{
+			width:700px;
+	text-align: center;
+		}
+/*5)call by Class/Id*/
+
+#hhh
+{
+	color:blue;
+}
+.pp{
+	background-color: lightyellow;
+}
+/*6),   Apply on more than one element*/
+
+div,section{
+	text-align: justify;
+}
+
+section{
+	background-color:aqua;
+}
+
+/*space will call all child either direct or grandchild*/
+div h2{
+	background-color: lightgreen;
+	}
+/*> will call only  direct child not all*/
+div>h2{
+	background-color:blue;
+	color:white;
+	}
+/*	~ will call all sibbling either adjacent or not*/
+div~h2
+{
+	background-color: pink;
+}
+div+h2{
+	font-size:40px;
+	background-color: teal;
+	border:2px red black;
+}
+
+	</style>
+</head>
+<body>
+<h1 align=center>How to Call Element to Apply CSS</h1>
+<h3>Combination Selectors  + ~ > space</h3>
+
+<pre class="pp">
+	How to target/call any element for CSS-
+
+1)*   		-apply on all elements
+2):root    -apply on base of webpage
+3)body    -used area of webpage
+4)Selector(tagname)
+5)Class/Id
+6),   Apply on more than one element
+7)Combination Selectors  + ~ > space
+8)Psuedo Elements
+9)Psuedo Class
+
+Combination Selectors-
+1)>
+2)space
+3)+
+4)~
+Note: > and space will call  child elements
++ and ~ will apply on sibblings not its child
+
+</pre>
+<h2 id="hhh">This is Heading2 outside parent div</h2>
+<div>
+	Parent Div..Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the
+	<h2>This is Heading2 ..Direct Child of Div</h2>
+ embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+ <section>
+Section...Child of above divkeyword to search online for the video that best fits your document.Video provides
+	<h2>This is Heading2 ..direct child of section & grand child of div..</h2>
+
+ a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to 
+</section>
+a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to 
+	<h2>This is Heading2 ..Direct Child of Div</h2>
+
+</div>
+<h2>This is Heading2 outside parent div....sibbling of above div...</h2>
+<p>
+	Para... sibbling of above div...keyword to search online for the video that best fits your document.Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to 
+</p>
+<h2>This is Heading2 outside parent div....sibbling of above div...</h2>
+<p>
+Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in theVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in theVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the</p>
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<h1>Available Tutorials</h1>
+<ul>
+    {% for tutorial in tutorials %}
+        <li>
+            <h2>{{ tutorial.title }}</h2>
+            <p>{{ tutorial.description }}</p>
+            <video width="320" height="240" controls>
+                <source src="{{ tutorial.video_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </li>
+    {% endfor %}
+</ul>

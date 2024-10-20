@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.ppp{
+			width:900px;
+			height: 700px;
+			border:1px solid black;
+			background-color: lightblue;
+			display: flex;
+/*			gap:10px;*/
+			/*flex-direction: row;
+			flex-wrap:wrap;*/
+
+			/*shorthand property of flex-direction and flex-wrap*/
+
+			flex-flow:row wrap;
+			/*horizontal alignment values are center, flex-end,flex-start,space-between,space-around*/
+
+			justify-content:space-around;
+			/*vertical alignment The align-content property is used to align the flex lines.values are center, flex-end,flex-start,space-between,space-around*/
+			align-content:space-between;
+
+		}
+		.ccc{
+			width:100px;
+			height: 70px;
+			border:1px solid black;
+			text-align: center;
+			background-color: lightgrey;
+		}
+		.hello{
+			/*flex-grow: 4;
+			flex-shrink: 4;*/
+			flex:4;
+		}
+
+	</style>
+</head>
+<body>
+<h1 align=center>display:flex</h1>
+<div class="ppp">
+	<div class="ccc">A</div>
+	<div class="ccc">B</div>
+	<div class="ccc">C</div>
+	<div class="ccc hello">DUCAT is in Noida and we are doing FrontEnd</div>
+	<div class="ccc">E</div>
+	<div class="ccc">F</div>
+	<!-- <div class="ccc">G</div>
+	<div class="ccc">H</div>
+	<div class="ccc">I</div>
+	<div class="ccc">J</div>
+ 	<div class="ccc">A</div>
+	<div class="ccc">B</div>
+ 	<div class="ccc">C</div>
+	<div class="ccc">D</div>
+	<div class="ccc">E</div>
+	<div class="ccc">F</div>
+	<div class="ccc">G</div>
+	<div class="ccc">H</div>
+	<div class="ccc">I</div>
+	<div class="ccc">J</div> -->
+
+</div>
+
+
+
+
+
+</body>
+</html>

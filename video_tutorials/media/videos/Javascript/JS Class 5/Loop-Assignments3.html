@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#ddd,.ducat
+		{
+			width:500px;
+			padding:10px;
+			background-color: yellow;
+				border:1px black solid;
+				margin:5px;
+		}
+
+	</style>
+</head>
+<body>
+<h1 align=center>Loop Assignments</h1>
+<pre>
+	<!-- Q-3. Input any number from user and 
+
+(a) check it is prime or not
+(b) Display it's reverse number.
+(c) check it is palindrome or not    eg. 121
+(d) Input any 3 digit number and check it is armstrong number or not. eg. 153=1*1*1+5*5*5+3*3*3=153
+(e) Input any number from user and check it is perfect number or not. eg. 6
+factors of 6 are 1,2,3 and now sum of factors are 1+2+3=6 means equal to 6
+f) Input any number from user and display its factorial. 
+eg. factorial of 5 = 5*4*3*2*1=120 
+(g) Check its factor-->
+</pre>
+<div class="ducat">
+	<ol>
+		<li>Factors</li>
+		<li>Prime Number</li>
+		<li>Reverse Number</li>
+		<li>Palindrome/li>
+		<li>Sum of Digits</li>
+		<li>Armstrong</li>
+		<li>Perfect Number</li>
+		<li>Factorial</li>
+
+	</ol>
+	Enter Choice:<input type="number" id=nn oninput="switch1()">
+</div>
+
+
+
+<div id="ddd">Result </div>
+<script type="text/javascript">
+
+function switch1()
+{
+	ch=parseInt(document.getElementById("nn").value)
+
+	switch(ch)
+	{
+		case 1:factors()
+		break
+		case 2:prime()
+		break
+		case 3:reverse1()
+		break
+		case 4:palindrome()
+		break
+		case 5:sum_of_digits()
+		break
+		case 6:armstrong()
+		break
+		case 7:perfect()
+		break
+		case 8:factorial()
+		break
+	default:x.innerHTML+=`Invalid Choice,Enter 1-8`
+
+	}
+}
+
+
+var x=document.getElementById("ddd")
+
+
+function factors()
+{
+	var num,a
+num=parseInt(prompt("Enter any Number:"))
+a=1   //Initialization
+while(a<=num)    //condition
+{
+	if(num%a==0)
+		x.innerHTML+=`&emsp; ${a}`
+	a=a+1    //updation
+}
+
+}
+function prime()
+{
+	var num,a,f=0
+num=parseInt(prompt("Enter any Number:"))
+a=1   //Initialization
+while(a<=num)    //condition
+{
+	if(num%a==0)
+	{
+		f=f+1
+	}
+	a=a+1    //updation
+}
+if(f==2)
+{
+	x.innerHTML+=" Prime Number"
+}
+else
+	{
+	x.innerHTML+="Not a  Prime Number"
+}
+}
+
+</script>
+
+</body>
+</html>

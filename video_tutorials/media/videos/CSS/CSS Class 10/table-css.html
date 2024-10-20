@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+table
+{
+table-layout: fixed;         /*other is auto by default*/
+empty-cells: hide;			/*it will effect when you set border-collapse as seperate */
+caption-side: bottom;
+border-collapse:collapse;  /*by default it is seperate */
+/*The border-collapse property sets whether the table borders should be collapsed into a single border*/
+}
+
+caption
+{
+	font-size: 30px;
+	font-weight: 900;
+	text-shadow: 3px 3px 3px red;
+}
+	thead,tfoot
+	{
+
+background:lightgreen;
+color:blue;
+font-weight: bold;
+text-transform:uppercase; 
+
+}
+
+
+tbody tr:nth-child(even)
+{
+	background-color: lightgrey;
+	color:black;
+
+}
+tbody tr:nth-child(odd)
+{
+	background-color: aqua;
+	color:red;
+
+}
+/*tbody tr td:nth-child(even)
+{
+	background-color: pink;
+	color:red;
+
+}*/
+
+tbody tr:hover
+ {background-color:white;}
+
+</style>
+
+
+
+</head>
+<body>
+<h1 align=center> Table with css property</h1>
+<table border=3 width=80% bgcolor=yellow background="penguuins.jpg" bordercolor=red cellpadding=10 cellspacing=20>
+<caption>Fees details</caption>
+<thead>
+<tr>
+<th colspan=4>Delhi Public School</th></tr>
+<tr>
+<th>Name</th>
+<th>Address</th>
+<th>Fees</th>
+<th>Photo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gagan is the best boy in the Class and he is intelligent</td>
+
+<!-- empty cell which will be hidden by css -->
+<td></td>
+<td>3499</td>
+<td><img src="koala.jpg" width=50 height=50></td>
+</tr>
+<tr>
+<td align=center></td>
+<td  align=center valign=bottom>MP</td>
+<td>4566</td>
+<td><img src="koala.jpg" width=50 height=50></td>
+</tr>
+<tr>
+<td>Ram</td>
+<td>UP</td>
+<td>8566</td>
+<td><img src="koala.jpg" width=50 height=50></td>
+</tr>
+<tr>
+<td>seema</td>
+<td>Delhi</td>
+<td>4500</td>
+<td><img src="koala.jpg" width=50 height=50></td>
+</tr>
+<tr>
+<td>seema</td>
+<td>Delhi</td>
+<td>4500</td>
+<td><img src="koala.jpg" width=50 height=50></td>
+</tr>
+<tr>
+<td>seema</td>
+<td>Delhi</td>
+<td>4500</td>
+<td><img src="koala.jpg" width=50 height=50></td>
+</tr>
+
+</tbody>
+<tfoot>
+<tr>
+<th colspan=4>Contact:4787348  &nbsp;&nbsp;&nbsp;&nbsp;         email:ducat@india.com</th>
+</tfoot>
+
+</table>
+
+
+
+
+
+</body>
+</html>

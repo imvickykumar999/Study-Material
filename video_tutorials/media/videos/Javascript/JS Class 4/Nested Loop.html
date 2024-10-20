@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1 align=center>Nested loop- MultiLevel Loop</h1>
+<pre>
+<!-- 1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+____________________________
+Assignments
+
+1					1					1						*
+2 2					2 3					2 3						* *
+3 3 3 				3 4 5				4 5 6					* * *
+4 4 4 4 			4 5 6 7				7 8 9 10				* * * *
+5 5 5 5 5 			5 6 7 8 9			11 12 13 14 15			* * * * *
+
+A                   	A
+A B                 	B B
+A B C              		C C C
+A B C D            		D D D D
+A B C D E             	E E E E E
+
+______________________________________________________________________________
+ASCII= American Standard Code for Information Interchange
+Every character in the keyboard has some ASCII code from 0-255 which is fixed. and this ASCII code will be converted into Machine lang
+eg.
+A-65				a-97				0-48 space=32
+B-66				b-98				1-49
+..					...					...
+Z-91				z-123				9- -->
+
+
+</pre>
+
+
+
+<script type="text/javascript">
+	//Input any 2 numbers and display table between them
+	document.write(`<h3> Input any 2 numbers and display table between them</h3>`)
+var num1,num2,t;
+num1=parseInt(prompt("Enter Number:"))
+num2=parseInt(prompt("Enter Number:"))
+
+while(num1<=num2)		//Outer Loop
+{
+for(t=1;t<=10;t=t+1)		//Inner Loop
+{
+	document.write(`<br> ${num1} X ${t} = ${num1*t}`)
+}
+document.write(`<hr> `)
+num1=num1+1
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

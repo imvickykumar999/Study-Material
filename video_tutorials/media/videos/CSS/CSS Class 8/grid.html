@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+/*		Parent Element*/
+		.ppp{
+			width:900px;
+			height: 700px;
+			border:1px solid black;
+			background-color: lightblue;
+			display:grid;
+/*			grid-template-rows:100px 200px 150px;
+			grid-template-columns: 100px 200px 150px 150px;*/		
+		/*	grid-template-rows:repeat(3,150px);
+			grid-template-columns: repeat(4,200px);*/
+				grid-template-rows:repeat(3,auto);
+			grid-template-columns: repeat(4,auto);
+			column-gap: 10px;
+			row-gap:5px;
+			gap:10px;
+			/*horizontal alignment values are center, flex-end,flex-start,space-between,space-around*/
+
+			justify-content:space-evenly;
+			/*vertical alignment The align-content property is used to align the flex lines.values are center, flex-end,flex-start,space-between,space-around*/
+			align-content:space-evenly;
+
+
+
+		}
+		.ccc{
+			width:100px;
+			height: 70px;
+			border:1px solid black;
+			text-align: center;
+			background-color: lightgrey;
+		}
+		
+		.hello
+		{
+			/*grid-column-start: 1;
+			grid-column-end:5;*/
+			grid-column:1/5;
+			/*grid-row-start:1;
+			grid-row-end:2;*/
+			grid-row:1/2;
+			width:auto;
+			height: auto;
+			padding:10px;
+		}
+
+	</style>
+</head>
+<body>
+<h1 align=center>display:grid</h1>
+<div class="ppp">
+	<div class="ccc">A</div>
+	<div class="ccc">B</div>
+	<div class="ccc">C</div>
+	<div class="ccc hello">DUCAT is in Noida and we are doing FrontEnd</div>
+	<div class="ccc">E</div>
+	<div class="ccc">F</div>
+ 	<div class="ccc">G</div>
+	<div class="ccc">H</div>
+	<div class="ccc">I</div>
+	<div class="ccc">J</div>
+ 	<div class="ccc">A</div>
+	<div class="ccc">B</div>
+ 	<!-- <div class="ccc">C</div>
+	<div class="ccc">D</div>
+	<div class="ccc">E</div>
+	<div class="ccc">F</div>
+	<div class="ccc">G</div>
+	<div class="ccc">H</div>
+	<div class="ccc">I</div>
+	<div class="ccc">J</div> 
+	<div class="ccc">A</div>
+	<div class="ccc">B</div>
+ 	<div class="ccc">C</div>
+	<div class="ccc">D</div>
+	<div class="ccc">E</div>
+	<div class="ccc">F</div>
+	<div class="ccc">G</div>
+	<div class="ccc">H</div>
+	<div class="ccc">I</div>
+	<div class="ccc">J</div>  -->
+</div>
+
+
+
+
+
+</body>
+</html>

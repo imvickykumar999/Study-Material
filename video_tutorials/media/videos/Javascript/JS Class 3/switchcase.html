@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1 align=center>Switch Case- Use Switch Case in case of multiple choice to avoid the ledder of if-else</h1>
+<pre>
+<!-- 
+		switch case
+		
+		switch(var)
+		{
+			case value:
+			case value:
+			default:
+		} -->
+</pre>
+
+<h2 id="hhh">Result :</h2>
+<button onclick="dayname()">Day Name</button> &emsp;
+<button onclick="vowel_consonant()">Vowel/Consonant</button>
+<script type="text/javascript">
+var x,ans
+x=document.getElementById("hhh")    //global varible
+
+function dayname()
+{
+	//Input number of day and display name of the day
+	var d=parseInt(prompt("Enter Day Number(1-7):"))
+switch (d)
+{
+case 1:ans="Sunday"
+		break
+case 2:ans="Monday"
+	break
+case 3:ans="Tuesday"
+	break
+case 4:ans="Wednesday"
+	break
+case 5:ans="Thursday"
+	break
+case 6:ans="Friday"
+	break
+case 7:ans="Saturday"
+	break
+default:ans="Invalid Day Number, Enter(1-7)"
+
+}
+x.innerHTML+=ans
+}
+
+function vowel_consonant()
+{
+	//Input any alphabet from user and check it is vowel/consonant
+var alpha=prompt("Enter Any Alphabet")
+switch(alpha)
+{
+case 'a':
+case 'e':
+case 'i':
+case 'o':
+case 'u':x.innerHTML+="Vowel"
+	break
+default:x.innerHTML+="Consonant"
+	
+}
+
+
+}
+
+
+
+
+
+
+//______________________________________________
+// if(d==1)
+// 	{ 
+// 		document.write("<br>Sunday")
+// 	}
+// else if(d==2)
+// 	{ 
+// 		document.write("<br>Monday")
+// 	}
+// else if(d==3)
+// 	{ 
+// 		document.write("<br>Tuesday")
+// 	}	
+// else if(d==4)
+// 	{ 
+// 		document.write("<br>Wednesday")
+// 	}	
+// 	else if(d==5)
+// 	{ 
+// 		document.write("<br>Thurday")
+// 	}
+// 	else if(d==6)
+// 	{ 
+// 		document.write("<br>Friday")
+// 	}		
+// 	else if(d==7)
+// 	{ 
+// 		document.write("<br>Saturday")
+// 	}
+// 	else
+// 	{
+// 		document.write("<br>Invalid Choice")
+// 	}
+	
+
+
+</script>
+</body>
+</html>

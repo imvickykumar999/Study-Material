@@ -1,0 +1,7 @@
+/*, will apply CSS on more than one tag*/
+h2,h1
+{
+background-color: pink;
+border:2px solid red;
+color:red;
+}

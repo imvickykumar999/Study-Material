@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1 align=center> Data Types</h1>
+<pre>
+	<!-- Data types are the main building blocks of any computer language. These are basically the formats to store data in the form of variables.JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine. You need to use var here to specify the data type. It can hold any type of values such as numbers, strings 
+
+//JavaScript identifiers (names) must begin with:A letter (A-Z or a-z),A dollar sign ($),Or an underscore (_)
+// There are 7 data types in JavaScript which can be broadly classified into 2 groups:
+// Primitive: A primitive data value is a single simple data value with no additional properties and methods.JavaScript has dynamic types.This includes 6 of the data-types.
+
+// 1.Boolean
+// 2.Null
+// 3.Undefined
+// 4.Number
+// 5.String
+// 6.Symbol (ECMAScript 6)-This data-type is new to JavaScript. Symbol is unique and immutable primitive value which might be used as key of an Object Property.It represents a unique "hidden" identifier that no other code can accidentally access.
+//7.Bigint- to store large number of integers
+
+// Non-Primitive: 
+// 1.Object	represents instance through which we can access members
+// 2.Array	represents group of similar values
+// 3.RegExp	represents regular expression
+
+// Object-Objects are data types representing the real world entities. They have data in the form of key-value pair.Objects are at the very core of JavaScript. An object is an entity in JavaScript which often resembles real-world things or objects. For example, an object named myCar can have properties representing inherent characteristics such as -- color, weight, height and also other real-world characteristics such as -- Brand, Model, etc.Every object has a collection of properties and property-values.
+// _________________________________________
+// Identifiers:
+//         name of programming entities like variables,functions,
+//         objects,classes etc
+    
+//     Rules of Identifiers:
+//         1. we can't use any keywords
+//         2. we can't use any digit as prefix of identifier
+//            but we can use digit in postix
+//         3. We can't use any special character except underscore
+//         4. We can't use same name for more the one item of same
+//            Statement block
+// if use strict then it will not allow any variable directly without declaration
+-->
+</pre>
+<script type="text/javascript">
+	// "use strict"
+	var a,b,c   	//declare
+	//We can use any variable without decalration but if you don't mention "use strict" at the top
+	d=500
+	document.write(`<br>Data Type of d is ${typeof(d)}`)
+document.write(`<br>Value of d is ${d}`)
+	a=200				//defining data type
+document.write("<h4>Primitive Data Type</h4>")
+document.write(`<br>Data Type of a is ${typeof(a)}`)
+document.write(`<br>Value of a is ${a}`)
+
+a=new Number(400)
+document.write(`<br>Data Type of a is after using new keyword ${typeof(a)}`)
+document.write(`<br>Value of a is ${a}`)
+a="Ducat"   //We can deine another data type anytime
+document.write(`<br>Data Type of a is ${typeof(a)}`)
+document.write(`<br>Value of a is ${a}`)
+document.write(`<br>Data Type of b is ${typeof(b)}`)
+document.write(`<br>Value of b is ${b}`)
+b="Hello"
+document.write(`<br>Data Type of b is ${typeof(b)}`)
+document.write(`<br>Value of b is ${b}`)
+b=new String("Ducat")
+document.write(`<br>Data Type of b is ${typeof(b)}`)
+document.write(`<br>Value of b is ${b}`)
+c=null
+document.write(`<br>Data Type of c is ${typeof(c)}`)
+document.write(`<br>Value of c is ${c}`)
+c=true
+document.write(`<br>Data Type of c after c=true  is ${typeof(c)}`)
+c=new Boolean(true)
+document.write(`<br>Data Type of c after c=new Boolean  is ${typeof(c)}`)
+document.write(`<br>Value of c is ${c}`)
+a=876678798787987676n   //bigint
+document.write(`<br>Data Type of a is ${typeof(a)}`)
+// var a=new BigInt(876678798787987676n)
+// document.write(`<br>Data Type of a after a=new BigInt(876678798787987676n)  is ${typeof(a)}`)      // it will not process
+document.write(`<br>Value of a is ${a}`)
+document.write("<h4>NonPrimitive Data Type</h4>")
+//Array-
+var x=[45,567,343,100,200,"Ducat",true]
+x=new Array(45,567,343,100,200,"Ducat",true)
+document.write(`<br>Data Type of x is ${typeof(x)}`)
+
+document.write(`<br>Value of x is ${x}`)
+for(var i=0;i<x.length;i=i+1)
+{
+	document.write(`<br>Value of at position ${i} is  ${x[i]}`)
+
+}
+//object
+var emp={
+	emp_name:"Shyam",
+	post:"Manager",
+	dept:"Purchase",
+	sal:90000,
+	married:true
+	}
+
+document.write(`<br>Data Type of emp is ${typeof(emp)}`)
+document.write(`<br>values of emp object is ${emp}`)
+document.write(`<br>Employee Name: ${emp.emp_name}`)
+document.write(`<br>Post: ${emp.post}`)
+document.write(`<br>Department: ${emp.dept}`)
+document.write(`<br>Salary: ${emp.sal}`)
+document.write(`<br>Marital Status: ${emp.married}`)
+
+</script>
+<hr>
+<p>
+	Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options 
+</p>
+</body>
+</html>

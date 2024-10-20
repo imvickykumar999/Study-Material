@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1 align=center>Loops</h1>
+	<pre>
+		<!-- Iteration-Loop- to execute a set of statements until any given number of times or any given condition is not satisfied -
+		1)for loop  ---again of 4 types
+
+				a)for(initialization;condition;updation)
+				{
+
+				}
+				Below three for loops will be used with array
+				b) for in
+				c) for of
+				d) for each 
+
+
+
+		2)while loop
+		syntax-
+		Initialization..variable to be checked, must be initialized before loop
+		while (condition)
+		{
+
+		updation
+		}
+
+		3)do while loop
+		Initialization..variable to be checked, must be initialized before loop
+		do
+		{
+
+		updation
+		}while (condition)'
+
+	
+// In while loop & do while- initialization and increment/decrement must be done. difference between while and do while is that while can't execute the loop unless condition is not satisfied at the very beginning. but do while give permission to execute the loop at least once although the given condition is not satisfied.
+
+Assignments
+// Practice questions
+// 1. Print series
+
+// (a)5,10........100
+// (b)100,97,.......3
+// (c)1,4,9,.......100
+// (d)1,8,27.......1000
+// (e)0,1,1,2,3,5.........200
+
+// 2. Input any number from user and display it's table-
+// 	eg. 9
+// 	9X1=9
+// 	9X2=18
+// 	...
+// 	...
+// 	9X10=90
+
+
+
+
+Q-3. Input any number from user and 
+
+(a) check it is prime or not
+(b) Display it's reverse number.
+(c) check it is palindrome or not    eg. 121
+(d) Input any 3 digit number and check it is armstrong number or not. eg. 153=1*1*1+5*5*5+3*3*3=153
+(e) Input any number from user and check it is perfect number or not. eg. 6
+factors of 6 are 1,2,3 and now sum of factors are 1+2+3=6 means equal to 6
+f) Input any number from user and display its factorial. 
+eg. factorial of 5 = 5*4*3*2*1=120
+
+
+
+
+ -->
+
+	</pre>
+	<script type="text/javascript">
+		//Input any name from user and display it 5 times
+		var na= prompt("Enter Name")
+		//for loop
+		// for(initialization;condition;updation)
+		// 		{
+
+		// 		}
+
+		document.write(`<h4 align=center>For Loop</h4>`)
+		var c
+		for(c=1;c<=10;c=c+1)
+		{
+		document.write(`<br>Name:${na}`)
+		}
+//while loop
+
+	// 	Initialization
+	// while (condition)
+	// 	{
+	// 	updation
+	// 	}
+	
+		document.write(`<h4 align=center>While Loop</h4>`)
+
+var x=1  //initialization
+x=7
+x=12
+while(x<=10)
+{
+		document.write(`<br>Name:${na}`)
+		x=x+1					//updation
+
+}
+
+		document.write(`<h4 align=center>Do While Loop</h4>`)
+
+var y=1  //initialization
+y=7
+y=12
+do
+{
+		document.write(`<br>Name:${na}`)
+		y=y+1      //updation
+
+}while(y<=10)
+
+
+
+	</script>
+
+</body>
+</html>
