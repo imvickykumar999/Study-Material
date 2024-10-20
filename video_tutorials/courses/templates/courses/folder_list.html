@@ -1,0 +1,8 @@
+<h1>Available Folders</h1>
+<ul>
+    {% for folder in folders %}
+        <li>
+            <a href="{% url 'tutorial_list' folder.folder_path %}">{{ folder.folder_path }}</a>
+        </li>
+    {% endfor %}
+</ul>

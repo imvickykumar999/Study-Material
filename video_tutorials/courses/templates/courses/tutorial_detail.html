@@ -1,0 +1,7 @@
+<h1>{{ tutorial.title }}</h1>
+<video width="640" height="360" controls>
+    <source src="{{ tutorial.video_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<p>{{ tutorial.description }}</p>
+<a href="{% url 'tutorial_list' tutorial.folder_path %}">Back to folder</a>
